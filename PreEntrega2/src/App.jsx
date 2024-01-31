@@ -6,6 +6,7 @@ import Cargaproductos from './components/Cargaproductos'
 import Navbar from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Items from './components/items'
 
 function App() {
 // <ItemListContainer titulo={"Este producto no existe"} texto={"Favor intente buscar otro"} />
@@ -27,9 +28,8 @@ function App() {
       <Section />
       <ItemListContainer />
       <Routes>
-        <Route path={"/"} element={<ItemListContainer />} />
-        <Route path={"/category/:id"} element={<ItemListContainer />} />
-        <Route path={"/item/:id"} element={<ItemListContainer />} />
+        <Route path={"/"} element={<Items />} />
+       
       </Routes>
       <Footer />
     </BrowserRouter>
